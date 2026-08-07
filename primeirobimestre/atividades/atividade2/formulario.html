@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Crie sua conta</legend>
+            <div>
+                <label for="name">Digite seu nome completo:</label>
+                <input type="name" name="user_name" title="Digite seu nome
+        completo." id="user_name" required placeholder="Carlos Emanuel">
+            </div>
+            <div>
+                <label for="e-mail">Digite seu e-mail:</label>
+                <input type="email" name="user_mail" id="user_mail" placeholder="email@provedor.com" required>
+            </div>
+            <div>
+                <label for="password">Digite sua senha:</label>
+                <input type="password" name="user_pass" id="user_pass" required pattern=".{8,}"
+                    placeholder="Minimo 8 caracteres">
+            </div>
+            <div>
+                <label for="option"><strong>Gênero</strong></label>
+                <select id="genero" name="genero">
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="nao_binario">Não binário</option>
+                    <option value="outro">Outro</option>
+                    <option value="prefiro_nao_informar">Prefiro não informar</option>
+                </select>
+            </div>
+            <div>
+                <label for="text">Biografia: </label>
+                <textarea name="text" id="text" rows="5">Fale um pouco sobre você</textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="check" id="check" required>
+                <label for="checkbox">Eu li e aceito os termos de serviço.</label>
+            </div>
+
+        </fieldset>
+        <div>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>

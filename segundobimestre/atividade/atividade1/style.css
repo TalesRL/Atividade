@@ -1,0 +1,25 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+  background: #f4f7fb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { width: min(1120px, calc(100% - 32px)); margin: 52px auto; }
+.cabecalho { text-align: center; margin-bottom: 32px; }
+.etiqueta { color: #2563eb; font-size: 12px; font-weight: 800; letter-spacing: 2px; }
+h1 { font-size: clamp(28px, 5vw, 44px); margin: 12px 0; }
+.descricao { color: #64748b; line-height: 1.6; }
+button { border: 0; border-radius: 10px; background: #2563eb; color: white; padding: 14px 22px; font-weight: bold; cursor: pointer; margin-top: 14px; }
+button:hover:not(:disabled) { background: #1d4ed8; }
+button:disabled { opacity: .65; cursor: wait; }
+.mensagem { text-align: center; color: #64748b; margin: 26px 0; }
+.mensagem.erro { color: #b91c1c; }
+.grade-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+.card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 6px 18px rgba(15, 23, 42, .05); }
+.card img { display: block; height: 205px; width: 100%; object-fit: contain; background: #f8fafc; padding: 16px; }
+.card-conteudo { padding: 18px; }
+.categoria { display: inline-block; font-size: 12px; color: #1d4ed8; background: #eff6ff; border-radius: 30px; padding: 6px 10px; margin-bottom: 10px; }
+.card h2 { margin: 2px 0 14px; font-size: 17px; line-height: 1.4; min-height: 48px; }
+.preco { margin: 0; font-size: 22px; font-weight: 800; color: #0f172a; }
+@media (max-width: 520px) { .container { margin: 30px auto; } .grade-produtos { grid-template-columns: 1fr; } }

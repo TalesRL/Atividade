@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos | DummyJSON</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="cabecalho">
+      <p class="etiqueta">CATÁLOGO ONLINE</p>
+      <h1>Explore nossos produtos</h1>
+      <p class="descricao">Clique no botão para consultar os 12 primeiros produtos da API DummyJSON.</p>
+      <button id="carregarBtn" type="button">Carregar produtos</button>
+    </header>
+
+    <p id="mensagem" class="mensagem" role="status" aria-live="polite">Os produtos aparecerão aqui após o carregamento.</p>
+    <section id="produtos" class="grade-produtos" aria-label="Lista de produtos"></section>
+  </main>
+</body>
+</html>
